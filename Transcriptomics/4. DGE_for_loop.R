@@ -17,7 +17,7 @@ DGE_df <- read_csv(paste(print(Celltype),"_CADASILvsControl_DESeq2.csv", sep = "
 ## term_gene is a dataframe with each column labeled as the metascape term ID, and each column's cells is populated by the genes associated with that term
 term_genes <- read_csv(paste("metascape/", print(DGE), "_", print(Celltype), "_Metascape_genes.csv", sep = "")) 
 ## term_stats is a dataframe, with the metascape statistics for each term, it contains the following columns
-## Term (metascape term ID), Descriptio (given description of term), metascape LogP (given p-value associated with term from metascape), metascape LogQ (given p-adj value associated with term from metascape), genes (genes from DEG list found to be associated with term)
+## Term (metascape term ID), Description (given description of term), metascape LogP (given p-value associated with term from metascape), metascape LogQ (given p-adj value associated with term from metascape), genes (genes from DEG list found to be associated with term)
 term_stats <- read_csv(paste("metascape/", print(DGE), "_", print(Celltype), "_Metascape_stats.csv", sep = ""))
 
 ## 2. Create an empty dataframe to store final data
